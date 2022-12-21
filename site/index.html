@@ -4,9 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Everyone</title>
+    <title>Payment Gateway</title>
 </head>
 <body>
-    <h1 style="color : red">New one</h1>
+    <h1 style="color :cornflowerblue">Payment Form</h1>
+    <h5 style = "color:red">Required fields are followed by *</h5>
+    <form action="">
+        <h2>Contact Information</h2>
+        <p>Name: * <input type="text" name="name" id="name" required></p>
+        <fieldset>
+            <legend>Gender</legend>
+            <p>Male<input type="radio" name="gender" id="male"> Female <input type="radio" name="gender" id="female"></p>
+        </fieldset>
+        <p>Address : <textarea name="address" id="address" cols="100" rows="10"></textarea></p>
+        <p>Email: *<input type="email" name="emailID" id="emailID" required></p>
+        <p>Pincode:* <input type="number" name="pincode" id="pincode" required></p>
+        <hr>
+        <h2>Payment Information</h2>
+        <p>Card Type: *
+            <select name="card" id="card" required>
+                <option value="">--Select a Card Type--</option>
+                <option value="Rupay">Rupay</option>
+                <option value="Visa">VISA</option>
+                <option value="amex">American Express</option>
+                <option value="slice">Slice</option>
+            </select>
+        </p>
+        <p>Card number * <input type="number" name="num" id="num" required></p>
+        <p>Expiration Date: * <input type="date" name="exp" id="exp" required></p>
+        <p>CVV * <input type="password" name="cvv" id="cvv" required></p>
+        <p><input type="submit" value="pay now"></p>
+    </form>
 </body>
 </html>
